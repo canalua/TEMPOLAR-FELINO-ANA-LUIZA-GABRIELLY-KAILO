@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempolar Felino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tempolar Felino</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#gatos">Nossos Gatos</a></li>
+                <li><a href="#adocao">Como Adotar</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao Tempolar Felino! Somos uma organização dedicada a ajudar gatos a encontrar novos lares. Nossa missão é promover a adoção responsável e conscientizar sobre o bem-estar animal.</p>
+    </section>
+
+    <section id="gatos">
+        <h2>Nossos Gatos</h2>
+        <div class="gato">
+            <img src="gato1.jpg" alt="Gato 1">
+            <h3>Nome do Gato 1</h3>
+            <p>Descrição do gato 1.</p>
+            <button>Adoção</button>
+        </div>
+        <div class="gato">
+            <img src="gato2.jpg" alt="Gato 2">
+            <h3>Nome do Gato 2</h3>
+            <p>Descrição do gato 2.</p>
+            <button>Adoção</button>
+        </div>
+        <!-- Adicione mais gatos conforme necessário -->
+    </section>
+
+    <section id="adocao">
+        <h2>Como Adotar</h2>
+        <p>Para adotar um dos nossos gatos, entre em contato conosco através do formulário na seção de contato abaixo.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="enviar.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tempolar Felino. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+.gato {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
